@@ -1,6 +1,6 @@
-import fileinput
+f = open("day-1\input.txt", "r")
 
-f = open("input", "r")
-
-for line in fileinput.input(f):
+for line in f:
     print(line)
+
+f.close()
