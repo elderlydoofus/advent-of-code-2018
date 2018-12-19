@@ -1,6 +1,6 @@
 from itertools import cycle
 
-f = open("day-1\\input.txt", "r")
+f = open("day-01\\input.txt", "r")
 
 freq = 0
 freq_list = []
