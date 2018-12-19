@@ -1,4 +1,4 @@
-f = open("day-02\\test_input.txt", "r")
+f = open("day-02\\input.txt", "r")
 
 id_two = 0
 id_three = 0
@@ -17,5 +17,4 @@ for line in f:
             id_three += 1
             id_three_bool = True
 
-print("id_two = " + str(id_two))
-print("id_three = " + str(id_three))
+print(id_two * id_three)
