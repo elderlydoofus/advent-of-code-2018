@@ -1,8 +1,21 @@
 f = open("day-02\\test_input.txt", "r")
 
+id_two = 0
+id_three = 0
+
 for line in f:
     letters = list(line.rstrip())
-    print(letters)
-    for letter in letters:
-        if line.count(letter) > 1:
-            print("letter " + str(letter) + " has " + str(line.count(letter)) + " occurence(s).")
+    unique_letters = set(line.rstrip())
+    id_two_bool = False
+    id_three_bool = False
+    for letter in unique_letters:
+        count = letters.count(letter)
+        if count == 2 and id_two_bool == False:
+            id_two += 1
+            id_two_bool = True
+        elif count == 3 and id_three_bool == False:
+            id_three += 1
+            id_three_bool = True
+
+print("id_two = " + str(id_two))
+print("id_three = " + str(id_three))
