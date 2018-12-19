@@ -3,4 +3,6 @@ contents = f.read().strip().splitlines()
 
 for linex in contents:
     for liney in contents:
-        print(set(linex + liney))
+        if len(set(linex + liney)) == 6:
+            match = [x for x in list(linex) if x in list(liney)]
+            print(str(match))
