@@ -4,5 +4,6 @@ for line in f:
     letters = list(line.rstrip())
     print(letters)
     for letter in letters:
-        if line.count(letter) > 1:
+        if line.count(letter) == 2:
             print("letter " + str(letter) + " has " + str(line.count(letter)) + " occurence(s).")
+            
